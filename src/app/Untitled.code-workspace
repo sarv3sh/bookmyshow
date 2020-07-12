@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"path": "../../../../Downloads/angular-cinema-master"
+		},
+		{
+			"path": "../../../../booking-app"
+		},
+		{
+			"path": "../../../../OnlineTicketBooking"
+		},
+		{
+			"path": "../.."
+		},
+		{
+			"path": "../../../../OnlineTicket"
+		}
+	],
+	"settings": {
+		"git.ignoreLimitWarning": true
+	}
+}

@@ -1,0 +1,23 @@
+<mat-toolbar style="background-color:#1f2533;">
+<mat-toolbar-row>
+  <span>Book My Show</span>
+  <span class="example-spacer"></span>
+  
+  <button mat-icon-button routerLink='home'><mat-icon class="example-icon" aria-hidden="false" aria-label="Example delete icon">home</mat-icon></button>
+
+</mat-toolbar-row>
+</mat-toolbar>
+<mat-sidenav-container >
+    <mat-sidenav style="background-color: grey;" mode="side" opened>
+     <mat-nav-list style="width: 200px;">
+        <a mat-list-item routerLink='abt' style="height: 60px;">	<mat-icon>perm_identity</mat-icon>About Us</a>
+        <a mat-list-item routerLink='con' style="height: 60px;">	<mat-icon>perm_phone_msg</mat-icon>Contact Us</a>
+     </mat-nav-list>
+      </mat-sidenav>
+      <mat-sidenav-content>
+        <p style="height: 100vh; ">
+          <router-outlet></router-outlet>
+        </p>
+      </mat-sidenav-content>
+      
+</mat-sidenav-container>

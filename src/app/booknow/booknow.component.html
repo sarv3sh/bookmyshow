@@ -1,0 +1,90 @@
+<form   name="book" class="example-form" style=" margin-left: 100px;" >
+  
+
+  <table class="example-full-width" cellspacing="0"><tr>
+    <td><mat-form-field class="example-full-width required">
+      <mat-label >First name</mat-label>
+      <input matInput ngmodel [required]="1" minlength="1">
+    </mat-form-field></td>
+    <td><mat-form-field class="example-full-width required">
+      <mat-label>Last Name </mat-label>
+      <input matInput [required]="1">
+    </mat-form-field></td>
+  </tr></table>
+
+  <p>
+    <mat-form-field class="example-full-width required" style="padding-top: 10px;">
+      <mat-label>Address</mat-label>
+      <textarea matInput placeholder="Ex. 100 Main St" required></textarea>
+    </mat-form-field>
+    <mat-form-field class="example-full-width required">
+      <mat-label>Address 2</mat-label>
+      <textarea matInput required></textarea>
+    </mat-form-field>
+  </p>
+
+  <table class="example-full-width" cellspacing="0"><tr>
+    <td><mat-form-field class="example-full-width required">
+      <mat-label>City</mat-label>
+      <input matInput placeholder="Ex. San Francisco" required>
+    </mat-form-field></td>
+    <td><mat-form-field class="example-full-width required">
+      <mat-label>State</mat-label>
+      <input matInput placeholder="Ex. California" required>
+    </mat-form-field></td>
+    <td><mat-form-field class="example-full-width required">
+      <mat-label>Postal Code</mat-label>
+      <input matInput #postalCode maxlength="5" placeholder="Ex. 94105 required" >
+      
+    </mat-form-field></td><br>
+
+    
+  
+  </tr>
+
+  <table ><tr>
+    <td><mat-form-field >
+      <mat-label class="required" required>Mobile Number</mat-label>
+      <input matInput [required]="1">
+    </mat-form-field></td>
+    </tr>
+  </table>
+  
+
+
+  <mat-form-field style="padding-top: 10px;">
+    <mat-label class="required" required>Number of Tickets</mat-label>
+    <select matNativeControl required>
+      
+        <option >1</option>
+        <option >2</option>
+      
+        <option >3</option>
+        <option >4</option>
+        <option >5</option>
+        <option >6</option>
+      
+    </select>
+  </mat-form-field>
+  <mat-form-field style="padding-top: 10px;">
+    <mat-label class="required">Show timing</mat-label>
+    <select matNativeControl required>
+      
+        <option >11.30 AM</option>
+        <option >12.00 AM</option>
+      
+        <option >2.00 PM</option>
+        <option >4.00 PM</option>
+        <option >7.30 PM</option>
+        <option >10.30 PM</option>
+      
+    </select>
+  </mat-form-field>
+  
+  
+  
+    <div style="color: rgb(197, 182, 182);">Select your seats:  </div> <a><button   [routerLink]="['/bookmy']"  Active="active" mat-raised-button color="warn"  style="margin-top:15px; margin-left:5px;">select</button></a>
+    
+   
+ </table>
+</form>
